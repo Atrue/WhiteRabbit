@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Wake up, Neo...{% endblock title %}
+
+{% block js %}
+    <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% endblock js %}
+
+{% block body %}
+    <h1>Wake up, Neo...</h1>
+    <h1>Follow the <span class="white white-rabbit">white rabbit</span>.</h1>
+{% endblock body %}

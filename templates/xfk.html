@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block js %}
+    <script type="text/javascript" src="{{ url_for('static', filename='js/xfk.js') }}"></script>
+{% endblock js %}
+
+{% block body %}
+    <h1>What is your goal?</h1>
+    <input type="text" name="goal" autofocus/>
+{% endblock body %}

@@ -1,0 +1,67 @@
+body {
+    font-family: 'VT323', monospace;
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    color: lime;
+    font-size: 2.5em;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 2s steps(60, end);
+    text-align: center;
+}
+
+h1:nth-child(2){
+    animation: type-next 4s steps(60, end);
+}
+
+h1:nth-child(2):after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes type {
+    from { width: 0; }
+    to { width: 15em; }
+}
+
+@keyframes type-next {
+    0%{ width: 0;}
+    50%{ width: 0;}
+    100%{ width: 15em; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+
+.white {
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type=text] {
+    background: #000;
+    border: none;
+    color: white;
+    font-size: 2.5em;
+    font-family: 'VT323', monospace;
+    text-align: center;
+}

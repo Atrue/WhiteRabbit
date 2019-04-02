@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}The matrix has you.{% endblock title %}
+
+{% block js %}
+    <script type="text/javascript" src="{{ url_for('static', filename='js/hello.js') }}"></script>
+{% endblock js %}
+
+{% block body %}
+    <h1>The matrix has you.</h1>
+    <h1>Fol<span class="white-rabbit">l</span>ow the <span class="white">.white-rabbit</span>.</h1>
+{% endblock body %}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/base.css') }}" rel="stylesheet">
+    {% block js %}
+    {% endblock js %}
+    <title>{% block title %}Follow the white rabbit{% endblock title %}</title>
+</head>
+<body>
+{% block body %}
+{% endblock body %}
+</body>
+</html>

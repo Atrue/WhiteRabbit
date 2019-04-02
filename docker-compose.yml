@@ -1,0 +1,16 @@
+version: '2.3'
+
+services:
+  db:
+    extends:
+      file: docker-compose.common.yml
+      service: db
+  app:
+    extends:
+      file: docker-compose.common.yml
+      service: app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    command: python3 app.py
