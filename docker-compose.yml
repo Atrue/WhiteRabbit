@@ -14,3 +14,8 @@ services:
     depends_on:
       - db
     command: python3 app.py
+  gulp:
+    extends:
+      file: docker-compose.common.yml
+      service: app
+    command: npm run gulp
